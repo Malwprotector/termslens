@@ -1,0 +1,34 @@
+# interface.kv
+BoxLayout:
+    orientation: 'vertical'
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1 
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    Label:
+        text: 'TermsLens - CGU Analyzer'
+    BoxLayout:
+        orientation: 'horizontal'
+        Button:
+            text: 'Select PDF file'
+            on_release: app.show_file_manager()
+        Button:
+            text: 'Classify Text'
+            on_release: app.classify_text(root.ids.text_input.text)
+        Button:
+            text: 'Test algorithm'
+            on_release: app.test_algorithm()
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id: text_input
+            hint_text: 'If you are using the classification option, enter the text to be analysed here...'
+            multiline: False
+            size_hint_y: None
+            height: 30
+    ScrollView:
+        Label:
+            id: output_label
+            text: 'Output will appear here...'
