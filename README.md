@@ -15,12 +15,12 @@ TermsLens is an educational tool designed for research and learning purposes. It
 - **Limited Liability**: The author and contributors of TermsLens are not liable for any direct or indirect damages, losses, or inconvenience resulting from the use of this software.
 - **Not Legal Advice**: The analysis provided by TermsLens does not constitute legal advice. Consult legal experts for interpreting legal documents and contracts.
 
-By using this software, you agree that the author and contributors shall not be held liable for any consequences resulting from the use or misuse of this tool. Users are encouraged to use their judgment and seek professional advice when dealing with legal or critical matters. <strong> For more information about the disclaimer, credits and licence, please go to [the bottom of the page.](https://github.com/Malwprotector/termslens/#Non-liability-clause/)</strong>
+By using this software, you agree that the author and contributors shall not be held liable for any consequences resulting from the use or misuse of this tool. Users are encouraged to use their judgment and seek professional advice when dealing with legal or critical matters. <strong> For more information about the disclaimer, credits and licence, please go to [the bottom of the page.](https://github.com/Malwprotector/termslens/blob/main/README.md#credits)</strong>
 
 ---
 ## Installing and running
 ---
-<i>Note: I haven't had time to compile my software yet. If you just want to get it working, you will need to check that [python3](https://www.python.org/) is installed on your computer, that the modules mentioned below are also installed, then download the files from the github repository to your computer, then run the termslens file. (The data.csv file must be in the same directory as the latter for this to work)</i>
+<i>Note: I haven't had time to compile my software yet. If you just want to get it working, you will need to check that [python3](https://www.python.org/) is installed on your computer, that the [modules mentioned below](https://github.com/Malwprotector/termslens/blob/main/README.md#requirements) are also installed, then download the files from the github repository to your computer, then run the termslens file. (The data.csv file must be in the same directory as the latter for this to work)</i>
 
 ### Graphical User Interface (`termslens_gui.py`)
 
@@ -32,7 +32,7 @@ python termslens_gui.py
 or
 
 ```bash
-python3 termslens_terminal.py
+python3 termslens_gui.py
 ```
 
 The interface will provide options to perform operations like selecting a PDF file for analysis, classifying text, and testing the algorithm.
@@ -128,7 +128,7 @@ I'd especially like to thank the authors of [this book](https://www.editions-eyr
 
 Any similarity (especially in the data.csv file, which contains a very large volume of text) with something that exists elsewhere (e.g. licensing terms or something similar) would be an incredible coincidence.
 
-If you have a problem with something, my contact page is at the bottom of this page.
+If you have a problem with something, [my contact page is at the bottom of this page.](https://github.com/Malwprotector/termslens/blob/main/README.md#contact-me) I will get back to you as soon as possible.
 
 #### License
 
