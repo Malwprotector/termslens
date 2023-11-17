@@ -3,6 +3,8 @@
 ## Introduction
 Termslens is a python-based software application based on a powerful algorithm capable of analysing dubious general terms and conditions of use and extracting, using a large volume of training data, any suspicious content that could affect the user's privacy and anonymty.
 
+![TermsLens logo](https://raw.githubusercontent.com/Malwprotector/termslens/main/img/ilu1.png)
+
 ---
 
 ### Disclaimer
@@ -38,6 +40,7 @@ python3 termslens_gui.py
 The interface will provide options to perform operations like selecting a PDF file for analysis, classifying text, and testing the algorithm.
 
 ### Interface Usage
+![inteface](https://raw.githubusercontent.com/Malwprotector/termslens/main/img/ilu2.png)
 
 - **Select PDF file**: Opens a file manager to choose a PDF document for analysis.
 - **Classify Text**: Analyzes the provided text in the horizontal bar below the buttons to determine its suspicious nature.
