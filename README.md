@@ -20,7 +20,7 @@ By using this software, you agree that the author and contributors shall not be 
 ---
 ## Installing and running
 ---
-<i>Note: I haven't had time to compile my software yet. If you just want to get it working, you will need to check that [python3](https://www.python.org/) is installed on your computer, that the [modules mentioned below](https://github.com/Malwprotector/termslens/blob/main/README.md#requirements) are also installed, then download the files from the github repository to your computer, then run the termslens file. (The data.csv file must be in the same directory as the latter for this to work)</i>
+<i>Note: I haven't had time to compile my software yet. If you just want to get it working, you will need to check that [python3](https://www.python.org/) is installed on your computer, that the [modules mentioned below](https://github.com/Malwprotector/termslens/blob/main/README.md#requirements) are also installed, then download the files from the github repository to your computer, then run the `termslens_gui.py` file. (The `data.csv` and `interface.kv` file must be in the same directory as `termslens_gui.py` for this to work)</i>
 
 ### Graphical User Interface (`termslens_gui.py`)
 
