@@ -97,7 +97,7 @@ class TermsLensApp(MDApp):
 
         output_label = self.root.ids.output_label
         output_label.text = ("The suspect content has been filtered and saved in "
-                             "'termslens_analysis_filter_for_suspect_content.txt'."
+                             "a txt file."
                              "This has now been opened.")
 
     def classify_text(self, text):
