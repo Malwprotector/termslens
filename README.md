@@ -17,7 +17,7 @@ TermsLens is an educational tool designed for research and learning purposes. It
 - **Limited Liability**: The author and contributors of TermsLens are not liable for any direct or indirect damages, losses, or inconvenience resulting from the use of this software.
 - **Not Legal Advice**: The analysis provided by TermsLens does not constitute legal advice. Consult legal experts for interpreting legal documents and contracts.
 
-By using this software, you agree that the author and contributors shall not be held liable for any consequences resulting from the use or misuse of this tool. Users are encouraged to use their judgment and seek professional advice when dealing with legal or critical matters. <strong> For more information about the disclaimer, credits and licence, please go to [the bottom of the page.](https://github.com/Malwprotector/termslens/blob/main/README.md#credits)</strong>
+By using this software, you agree that the author and contributors shall not be held liable for any consequences resulting from the use or misuse of this tool. Users are encouraged to use their judgment and seek professional advice when dealing with legal or critical matters. <strong> For more information about the disclaimer, credits and licence, please go to [the bottom of the page.](https://github.com/Malwprotector/termslens/blob/main/README.md#non-liability-clause)</strong>
 
 ---
 ## Installing and running
