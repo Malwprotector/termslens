@@ -9,7 +9,7 @@ Termslens is a python-based software application based on a powerful algorithm c
 
 - [Installing and running](https://github.com/Malwprotector/termslens/blob/main/README.md#installing-and-running)
 - [How to make TermsLens work and how it works](https://github.com/Malwprotector/termslens/blob/main/README.md#how-to-make-termslens-work-and-how-it-works)
-- [Algorithm](https://github.com/Malwprotector/termslens/blob/main/README.md#how-to-make-termslens-work-and-how-it-works)
+- [Algorithm](https://github.com/Malwprotector/termslens/blob/main/README.md#algorithm)
 - [Non-liability clause, credits and license](https://github.com/Malwprotector/termslens/blob/main/README.md#non-liability-clause-credits-and-license)
 ---
 
