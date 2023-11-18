@@ -5,6 +5,12 @@ Termslens is a python-based software application based on a powerful algorithm c
 
 ![TermsLens logo](https://raw.githubusercontent.com/Malwprotector/termslens/main/img/ilu1.png)
 
+### Table of contents
+
+- [Installing and running](https://github.com/Malwprotector/termslens/blob/main/README.md#installing-and-running)
+- [How to make TermsLens work and how it works](https://github.com/Malwprotector/termslens/blob/main/README.md#how-to-make-termslens-work-and-how-it-works)
+- [Algorithm](https://github.com/Malwprotector/termslens/blob/main/README.md#how-to-make-termslens-work-and-how-it-works)
+- [Non-liability clause, credits and license](https://github.com/Malwprotector/termslens/blob/main/README.md#non-liability-clause-credits-and-license)
 ---
 
 ### Disclaimer
@@ -47,7 +53,7 @@ The interface will provide options to perform operations like selecting a PDF fi
 - **Test Algorithm**: Evaluates and test the algorithm's performance based on the provided dataset.
 
 ---
-## how to make TermsLens work and how it works 
+## How to make TermsLens work and how it works 
 ---
 As a reminder, TermsLens is a Python-based application that serves the purpose of analyzing dubious general terms and conditions of use contracts to identify potentially privacy-concerning content. It comprises two primary modules: `termslens_terminal.py` designed for terminal use and easier comprehension of the algorithm, and `termslens_gui.py` featuring a graphical user interface for a more user-friendly experience. The `data.csv` file contains the training data that the algorithm uses each time to analyse a file. It must always be in the same directory as the python file you are running. This training data will probably be updated regularly to improve the algorithm, so be sure to come and have a look from time to time!
 
