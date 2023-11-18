@@ -47,7 +47,7 @@ The interface will provide options to perform operations like selecting a PDF fi
 - **Test Algorithm**: Evaluates and test the algorithm's performance based on the provided dataset.
 
 ---
-## how does TermsLens works and how to make it work
+## how to make TermsLens work and how it works 
 ---
 As a reminder, TermsLens is a Python-based application that serves the purpose of analyzing dubious general terms and conditions of use contracts to identify potentially privacy-concerning content. It comprises two primary modules: `termslens_terminal.py` designed for terminal use and easier comprehension of the algorithm, and `termslens_gui.py` featuring a graphical user interface for a more user-friendly experience. The `data.csv` file contains the training data that the algorithm uses each time to analyse a file. It must always be in the same directory as the python file you are running. This training data will probably be updated regularly to improve the algorithm, so be sure to come and have a look from time to time!
 
@@ -75,25 +75,7 @@ pip install nltk matplotlib wordcloud PyPDF2 pandas numpy kivy kivymd
 - `termslens_terminal.py`: Contains the terminal-based version of the application, designed for easy algorithm comprehension.
 - `termslens_gui.py`: Includes the graphical user interface for a more interactive experience.
 - `data.csv`: Contains the training data required for the algorithm.
-
-## Algorithm
-
-To achieve its objective, this software uses the <i>[Naive Bayes classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)</i>, which is based on the <i>[Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)</i>. I'll explain in more detail how all this works a little later, but for now, let's analyse the Bayes' theorem formula to better understand what we're talking about:
-```
-Pr(A|B) = Pr(B|A) Pr(A) / Pr(B)
-```
-
-1. **Data Preprocessing**: Tokenization, removing stop words, stemming, and processing messages.
-2. **Training**: Splitting the data into training and testing sets.
-3. **Classification**: Analyzing input text or PDF files to identify suspicious content based on the trained model.
-
-### Required Libraries
-
-The algorithm utilizes the following libraries:
-
-- `nltk`: For text preprocessing and tokenization.
-- `PyPDF2`: For extracting text from PDF files.
-- Other standard libraries for general operations.
+- `interface.kv`: Contains the GUI code for `termslens_gui.py`.
 
 ## Running the Application
 
@@ -112,7 +94,79 @@ python3 termslens_terminal.py
 
 Follow the instructions prompted in the terminal to perform various operations like analyzing text, testing the algorithm, etc.
 
-#### Non-liability clause
+---
+## Algorithm
+---
+
+To operate, termslens works as follows in its code (more precisely in `termslens_terminal.py`):
+
+-open and read the `data.csv` file
+-train on the `data.csv` file
+
+Once these steps have been completed:
+
+- Reading the specified pdf file
+- Separate the pdf file into lines of text
+- Analyse each line of text in detail
+- Filter lines deemed suspicious and return them to the user.
+
+Briefly and more concretely, the general algorithmic operation of Termslens is divided into these three steps:
+
+1. **Data Preprocessing**: Tokenization, removing stop words, stemming, and processing messages.
+2. **Training**: Splitting the data into training and testing sets.
+3. **Classification**: Analyzing input text or PDF files to identify suspicious content based on the trained model.
+
+These steps can also be observed in the code. Let's now look at the most interesting part, the algorithm, which is the heart of this software:
+
+
+To achieve its objective, this software uses the <i>[Naive Bayes classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)</i>, which is based on the <i>[Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)</i>. I'll explain in more detail how all this works a little later, but for now, let's analyse the Bayes' theorem formula to better understand what we're talking about:
+```
+Pr(A|B) = Pr(B|A) . Pr(A) / Pr(B)
+```
+It sounds complicated at first glance, but don't worry, we're going to put this mathematical formula into words: <i>When Termslens reads a sentence(B), the probability that it will be deemed suspicious(A) is equal to the probability that a suspicious sentence(A) is present in the database, multiplied by the probability of having a suspicious sentence in general, divided by the probability of getting a neutral sentence(B) at all.</i>
+
+In other words:
+
+when a sentence is analysed:
+```
+pobability to be a suspicious sentence = probability of a suspicious sentence being in the database . probability of having a suspect sentence in a real situation / probability of a sentence being analysed
+```
+Do you get it? If it's still abstract, that's normal, don't worry, it's a very complicated subject!
+
+Based on this, we're going to work out the probabilities of words appearing in a sentence:
+If the word "spaghetti" appears more frequently in the training database, the probability that a sentence named "spaghetti" will be considered suspicious by the algorithm increases considerably. 
+
+To train the algorithm in this way, we're going to use another formula, which I'll illustrate very simply here:
+```
+P(suspicious word | suspicious sentence) = (number of times the word appears in the database) / total number of words in the suspicious sentences
+```
+Next, we're going to use yet another method to calculate the IDF, which adds more dimension to our programme: if, for example, the word spaghetti is also contained in the neutral sentences, its suspicious value will drop. Here's the algorithm illustrated:
+```
+IDF(x) = number of messages / number of messages containing the word x.
+```
+
+The formulas shown here are not written as they appear in the python file, but all the code is commented out, so I invite you to have a look at it for yourself!
+
+By the way, I'm sorry if I wasn't concrete enough on this part, I'm not used to explaining such complex subjects in a concrete way, I've got some work to do on that XD
+
+And if you have any suggestions for improvement, I'd love to hear from you! :D
+
+
+
+
+
+
+### Required Libraries
+
+The algorithm utilizes the following libraries:
+
+- `nltk`: For text preprocessing and tokenization.
+- `PyPDF2`: For extracting text from PDF files.
+- Other standard libraries for general operations.
+
+---
+## Non-liability clause, credits and license
+---
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
