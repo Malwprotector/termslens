@@ -78,9 +78,10 @@ pip install nltk matplotlib wordcloud PyPDF2 pandas numpy kivy kivymd
 
 ## Algorithm
 
-<i>I haven't had time to explain in detail how the algorithm works in this section, but I'll be improving it very soon!</i>
-
-TermsLens employs a text analysis algorithm based on TF-IDF (Term Frequency-Inverse Document Frequency) and Bag-of-Words classifiers to identify suspicious content in terms of service contracts using the training data stored in the data.csv file. The process involves:
+To achieve its objective, this software uses the <i>[Naive Bayes classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)</i>, which is based on the <i>[Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem)</i>. I'll explain in more detail how all this works a little later, but for now, let's analyse the Bayes' theorem formula to better understand what we're talking about:
+```
+Pr(A|B) = Pr(B|A) Pr(A) / Pr(B)
+```
 
 1. **Data Preprocessing**: Tokenization, removing stop words, stemming, and processing messages.
 2. **Training**: Splitting the data into training and testing sets.
