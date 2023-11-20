@@ -106,8 +106,9 @@ Follow the instructions prompted in the terminal to perform various operations l
 
 To operate, termslens works as follows in its code (more precisely in `termslens_terminal.py`):
 
--open and read the `data.csv` file
--train on the `data.csv` file
+- Reading the specified pdf file
+- Open and read the `data.csv` file
+- Train and test on the `data.csv` file
 
 Once these steps have been completed:
 
