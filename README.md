@@ -202,4 +202,4 @@ Unless otherwise stated, the code for this project is licensed under the [Creati
 
 
 ### Contact me
-You can contact me for any problem via [my contact page.](https://main.st4lwolf.org/contacts.html/)
+You can contact me for any problem via [my contact page.](https://main.st4lwolf.org/contacts.html)
