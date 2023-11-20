@@ -114,7 +114,7 @@ Once these steps have been completed:
 
 - Reading the specified pdf file
 - Separate the pdf file into lines of text
-- Analyse each line of text in detail
+- Analyse each line of text in detail using the algorithm trained on the dataset
 - Filter lines deemed suspicious and return them to the user.
 
 Briefly and more concretely, the general algorithmic operation of Termslens is divided into these three steps:
