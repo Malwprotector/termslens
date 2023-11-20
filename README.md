@@ -50,7 +50,7 @@ The interface will provide options to perform operations like selecting a PDF fi
 
 - **Select PDF file**: Opens a file manager to choose a PDF document for analysis.
 - **Classify Text**: Analyzes the provided text in the horizontal bar below the buttons to determine its suspicious nature.
-- **Test Algorithm**: Evaluates and test the algorithm's performance based on the provided dataset.
+- **Test Algorithm**: Evaluates and test the algorithm's performance based on the provided dataset. 75% of the dataset will be used to train the algorithm, and 25% will be used to test it.
 
 ---
 ## How to make TermsLens work and how it works 
